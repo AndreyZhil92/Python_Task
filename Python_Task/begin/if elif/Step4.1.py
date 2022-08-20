@@ -57,10 +57,33 @@ if -1 <= a1 - a <= 1 and -1 <= b1 - b <= 1:
     print("YES")
 else:
     print("NO")
+#Если Зум быстрее Флэша нужно вывести «NO», если Флэш быстрее Зума нужно вывести «YES», если их скорости равны нужно вывести "Don't know"
+n,k = int(input()),int(input())
+if n>k:
+  print("NO")
+elif n<k:
+  print("YES")
+else:
+  print("Don't know")
 
+a,b,c = int(input()),int(input()),int(input())
+if a == b and b == c and a == c:
+  print("Равносторонний")
+elif a != b and a != c and b != c:
+  print("Разносторонний")
+elif a != b or c != a or b != c:
+  print("Равнобедренный")
 
-
-
+if a == "красный" and  b == "желтый" or a == "желтый" and  b == "красный":
+ print("оранжевый")
+elif a == "красный" and b == "синий" or a == "синий" and b == "красный":
+ print("фиолетовый")
+elif a == "синий" and b == "желтый" or a == "желтый" and b == "синий":
+ print("зеленый")
+elif a == b and (a == "красный" or a == "синий" or a == "желтый"):
+  print(a)
+else:
+   print("ошибка цвета")
 
 
 
